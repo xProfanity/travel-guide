@@ -1,6 +1,7 @@
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./Button";
 
 export default function Navbar() {
   return (
@@ -23,7 +24,12 @@ export default function Navbar() {
         </ul>
 
         <div className="lg:flexCenter hidden ">
-            <button type="button">click me</button>
+            <Button
+                type='button'
+                title="Login"
+                icon="/user.svg"
+                variant="btn_dark_green"
+            />
         </div>
     </div>
   )
