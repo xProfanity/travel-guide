@@ -1,8 +1,13 @@
+import { Camp, Features, GetApp, Guide, Hero } from '@/components'
 
 export default function Home() {
   return (
-    <h1 className='text-bold text-teal-500'>
-      Hello World
-    </h1>
+    <>
+      <Hero />
+      <Camp />
+      <Guide />
+      <Features />
+      <GetApp />
+    </>
   )
 }
